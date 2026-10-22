@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Focus — Pomodoro Timer",
+  "short_name": "Focus",
+  "version": "1.0.0",
+  "description": "A modern, minimal Pomodoro timer with an alarm at the end of every focus session.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Focus — Pomodoro Timer",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "alarms",
+    "storage",
+    "notifications",
+    "offscreen"
+  ],
+  "minimum_chrome_version": "109"
+}
